@@ -156,17 +156,21 @@
           <p>Se la tua struttura sanitaria è interessata a integrare un servizio anestesiologico esterno affidabile e flessibile, compila il modulo: ti ricontatteremo entro 48 ore con una proposta personalizzata.</p>
         </div>
         <div class="candidatura-form">
-          <form>
+          <form action="https://formsubmit.co/info@brevamedical.ch" method="POST">
+            <input type="hidden" name="_subject" value="Nuova richiesta da brevamedical.ch" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" />
+            <input type="hidden" name="_next" value="https://www.brevamedical.ch" />
             <div class="form-row">
-              <input type="text" placeholder="Nome *" required />
-              <input type="text" placeholder="Cognome *" required />
+              <input type="text" name="nome" placeholder="Nome *" required />
+              <input type="text" name="cognome" placeholder="Cognome *" required />
             </div>
             <div class="form-row">
-              <input type="email" placeholder="Email *" required />
-              <input type="tel" placeholder="Telefono *" required />
+              <input type="email" name="email" placeholder="Email *" required />
+              <input type="tel" name="telefono" placeholder="Telefono *" required />
             </div>
-            <input type="text" placeholder="Nome della struttura *" required />
-            <select required>
+            <input type="text" name="struttura" placeholder="Nome della struttura *" required />
+            <select name="tipologia" required>
               <option value="" disabled selected>Tipologia di struttura *</option>
               <option>Studio Dentistico</option>
               <option>Clinica di Fertilità</option>
@@ -174,8 +178,8 @@
               <option>Struttura Ospedaliera</option>
               <option>Altro</option>
             </select>
-            <input type="text" placeholder="Cantone / Località" />
-            <textarea placeholder="Descrivi brevemente le tue esigenze" rows="4"></textarea>
+            <input type="text" name="localita" placeholder="Cantone / Località" />
+            <textarea name="messaggio" placeholder="Descrivi brevemente le tue esigenze" rows="4"></textarea>
             <p class="privacy-note">Con l'invio dichiaro di essere maggiorenne e di aver preso visione dell'<a href="#">Informativa Privacy</a>.</p>
             <button type="submit" class="btn-submit">Richiedi una Proposta</button>
           </form>
