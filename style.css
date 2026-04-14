@@ -1,0 +1,618 @@
+/* ===========================
+   BREVA Medical - style.css
+   Brand v1.0 - Marzo 2026
+   =========================== */
+
+:root {
+  /* Palette ufficiale brandbook */
+  --prussiano:    #1B3A5C;   /* Primario */
+  --azzurro-lago: #419AAC;   /* Accento */
+  --acciaio:      #A8C4D4;   /* Supporto */
+  --bianco-lago:  #F3F1EC;   /* Sfondo */
+  --rosso-ticino: #C0392B;   /* Dettaglio (uso sparso) */
+  --white:        #FFFFFF;
+  --text:         #1B3A5C;
+  --text-muted:   #5A7A8A;
+  --border:       #D0DEE7;
+
+  --radius:     8px;
+  --shadow:     0 2px 16px rgba(27, 58, 92, 0.09);
+  --transition: 0.22s ease;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Jost', Arial, sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.75;
+}
+
+a { color: var(--azzurro-lago); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ---- LOGO ---- */
+.logo { display: flex; align-items: center; }
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.footer-pittogramma {
+  height: 48px;
+  width: auto;
+  filter: brightness(0) invert(83%) sepia(10%) saturate(500%) hue-rotate(163deg) brightness(93%);
+}
+
+/* ---- HEADER ---- */
+header {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 16px 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav { display: flex; align-items: center; gap: 32px; }
+
+nav a {
+  color: var(--text);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: color var(--transition);
+}
+
+nav a:hover { color: var(--azzurro-lago); text-decoration: none; }
+
+.btn-nav {
+  background: var(--prussiano);
+  color: var(--white) !important;
+  padding: 9px 22px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background var(--transition);
+}
+
+.btn-nav:hover { background: var(--azzurro-lago); }
+
+/* ---- HAMBURGER MOBILE ---- */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--prussiano);
+  margin: 5px 0;
+  transition: var(--transition);
+}
+
+/* ---- HERO ---- */
+.hero {
+  background: var(--prussiano);
+  color: var(--white);
+  padding: 96px 0 88px;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--azzurro-lago);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 300;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-bottom: 22px;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.85;
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+.hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+.btn-primary {
+  background: var(--azzurro-lago);
+  color: var(--white);
+  padding: 13px 32px;
+  border-radius: var(--radius);
+  font-family: 'Jost', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #368a9a;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  padding: 12px 32px;
+  border-radius: var(--radius);
+  font-family: 'Jost', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all var(--transition);
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  border-color: var(--white);
+  background: rgba(255,255,255,0.08);
+  text-decoration: none;
+}
+
+/* ---- INTRO ---- */
+.intro {
+  background: var(--bianco-lago);
+  padding: 56px 0;
+  text-align: center;
+}
+
+.intro-inner { max-width: 760px; margin: 0 auto; }
+
+.intro h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--prussiano);
+  margin-bottom: 14px;
+  line-height: 1.35;
+}
+
+.intro p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* ---- SERVIZI CARDS ---- */
+.servizi { padding: 72px 0; background: var(--white); }
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--prussiano);
+  margin-bottom: 48px;
+  letter-spacing: 0.03em;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 26px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  border-top: 3px solid var(--acciaio);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(27,58,92,0.13);
+  border-top-color: var(--azzurro-lago);
+}
+
+.card-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rosso-ticino);
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--prussiano);
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--azzurro-lago);
+  letter-spacing: 0.02em;
+}
+
+/* ---- IL SERVIZIO (griglia 2x2) ---- */
+.il-servizio {
+  background: var(--bianco-lago);
+  padding: 80px 0;
+}
+
+.il-servizio .section-eyebrow {
+  text-align: center;
+}
+
+.il-servizio .section-title {
+  margin-bottom: 48px;
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+}
+
+.service-icon {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+  color: var(--prussiano);
+}
+
+.service-card h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--prussiano);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  font-weight: 300;
+}
+
+/* ---- COME FUNZIONA (timeline) ---- */
+.come-funziona {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--acciaio);
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.timeline-step:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -33px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: var(--azzurro-lago);
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--azzurro-lago);
+}
+
+.timeline-step h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--prussiano);
+  margin-bottom: 4px;
+}
+
+.timeline-step p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+/* ---- PERCHE ---- */
+.perche {
+  background: var(--prussiano);
+  color: var(--white);
+  padding: 80px 0;
+}
+
+.perche h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 56px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 48px;
+}
+
+.feature-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rosso-ticino);
+  margin-bottom: 8px;
+}
+
+.feature h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: var(--azzurro-lago);
+}
+
+.feature p {
+  color: rgba(255,255,255,0.78);
+  font-size: 0.93rem;
+  font-weight: 300;
+}
+
+/* ---- CONTATTI ---- */
+.contatti {
+  background: var(--bianco-lago);
+  padding: 72px 0;
+}
+
+.contatti-inner { text-align: center; }
+
+.contatti h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--prussiano);
+  margin-bottom: 40px;
+  letter-spacing: 0.04em;
+}
+
+.contatti-grid {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contatto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.contatto-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.contatto-value {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: var(--text);
+}
+
+/* ---- CANDIDATURA ---- */
+.candidatura { padding: 80px 0; background: var(--white); }
+
+.candidatura-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.section-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rosso-ticino);
+  margin-bottom: 10px;
+}
+
+.candidatura-text h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--prussiano);
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.candidatura-text p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.candidatura-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.candidatura-form input,
+.candidatura-form select,
+.candidatura-form textarea {
+  width: 100%;
+  padding: 11px 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: 'Jost', Arial, sans-serif;
+  font-size: 0.93rem;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  transition: border-color var(--transition);
+}
+
+.candidatura-form input:focus,
+.candidatura-form select:focus,
+.candidatura-form textarea:focus {
+  outline: none;
+  border-color: var(--azzurro-lago);
+}
+
+.privacy-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.btn-submit {
+  background: var(--prussiano);
+  color: var(--white);
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: var(--radius);
+  font-family: 'Jost', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn-submit:hover { background: var(--azzurro-lago); }
+
+/* ---- FOOTER ---- */
+footer {
+  background: var(--prussiano);
+  padding: 40px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  color: rgba(255,255,255,0.65);
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.footer-logo { margin-bottom: 4px; }
+
+.footer-contact a {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.88rem;
+}
+.footer-contact a:hover { color: var(--white); text-decoration: none; }
+
+.footer-links a {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.82rem;
+}
+.footer-links a:hover { color: var(--white); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    gap: 16px;
+  }
+
+  nav.open { display: flex; }
+
+  nav a { width: 100%; text-align: center; }
+
+  .btn-nav { width: 100%; text-align: center; display: block; }
+
+  .candidatura-inner { grid-template-columns: 1fr; gap: 40px; }
+  .form-row { grid-template-columns: 1fr; }
+  .contatti-grid { flex-direction: column; align-items: center; gap: 28px; }
+  .perche h2 { font-size: 1.5rem; }
+  .hero { padding: 64px 0 56px; }
+  .hero h1 { font-size: 1.8rem; }
+  .grid-2x2 { grid-template-columns: 1fr; }
+}
