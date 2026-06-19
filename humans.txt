@@ -1,0 +1,11 @@
+# humanstxt.org
+
+/* SITE */
+Sito: BREVA Medical
+Standard: HTML5, CSS3
+Ultimo aggiornamento: 2026
+
+/* CREDITS */
+Sito e marketing: OIDA Labs — Agenzia di marketing sanitario
+Sito web: https://oida-labs.com
+Contatto: info@oida-labs.com
