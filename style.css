@@ -374,7 +374,12 @@ footer { background: linear-gradient(160deg, var(--prussiano) 0%, var(--prussian
   .icon-badge { margin-bottom: var(--s2); }
   .hero h1 { font-size: 2.1rem; }
   .contattaci-text { padding-top: 0; }
-  .hero::after { width: 380px; height: 380px; right: -110px; top: -90px; }
+  .hero::after {
+    width: 520px; height: 520px;
+    left: 50%; right: auto; top: 40px;
+    transform: translateX(-50%);
+    opacity: 0.055;
+  }
   .contattaci::after { width: 480px; height: 480px; left: -150px; bottom: -160px; }
 
   /* --- Caroselli schede su mobile (scroll-snap, no JS) --- */
