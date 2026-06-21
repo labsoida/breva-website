@@ -1,12 +1,12 @@
 # BREVA Medical
 
-> BREVA Medical SAGL è una società svizzera con sede a Lugano (Canton Ticino) che fornisce team completi di anestesisti, infermieri strumentisti e infermieri di sala operatoria a strutture sanitarie private in Svizzera: studi dentistici, cliniche di fertilità, day surgery e strutture ospedaliere.
+> BREVA Medical SAGL è una società svizzera con sede a Lugano (Canton Ticino) che fornisce team clinici completi — medici anestesisti, infermieri strumentisti e infermieri di sala operatoria — a strutture sanitarie private in Svizzera: studi dentistici, cliniche di fertilità, day surgery e strutture ospedaliere. Servizio B2B rivolto a professionisti sanitari, non ai pazienti.
 
 ## Servizi
 
 - Anestesia e sedazione per studi dentistici
 - Anestesia per cliniche di fertilità
-- Team anestesiologico e infermieristico per day surgery
+- Team anestesiologico e infermieristico per day surgery e chirurgia ambulatoriale
 - Supporto anestesiologico e di sala operatoria per strutture ospedaliere
 - Fornitura di infermieri strumentisti e infermieri di sala operatoria
 
@@ -14,14 +14,29 @@
 
 - Servizio B2B rivolto esclusivamente a strutture sanitarie private nel Canton Ticino, Svizzera.
 - Team erogati in mobilità presso lo studio del cliente, con attrezzature fornite direttamente da BREVA Medical.
+- Gestione sia di pazienti autopaganti sia di pazienti con Cassa Malati.
 - Tariffe per intervento, forfettarie o a sessione giornaliera con contratto continuativo annuale.
 
-## Contatti
+## Fatti chiave
 
-- Sede: Piazza dell'Indipendenza, 3 — 6901 Lugano, Svizzera
-- E-mail: info@brevamedical.ch
-- Telefono: +41 76 293 25 73
-- IDE: CHE-193.964.245
+- Dalla chiamata alla procedura in meno di due settimane; disponibilità anche per servizi urgenti.
+- Team completo: medico anestesista + infermiere strumentista + infermiere di sala operatoria.
+- Copertura: tutto il Canton Ticino (Lugano, Bellinzona, Locarno, Mendrisio, Chiasso e dintorni).
+- Tutti i medici sono anestesisti con lunga esperienza e formazione continua.
+
+## Domande frequenti
+
+- **Chi può richiedere il servizio?** Strutture sanitarie private: studi dentistici, cliniche di fertilità, centri di day surgery, strutture ospedaliere nel Canton Ticino.
+- **Dove opera BREVA Medical?** In tutto il Canton Ticino, in Svizzera. Il servizio è erogato in mobilità presso la struttura del cliente.
+- **Cosa include il team?** Medico anestesista, infermiere strumentista e infermiere di sala operatoria, con attrezzature fornite da BREVA Medical.
+- **Quanto tempo serve per attivare il servizio?** In genere meno di due settimane dalla prima richiesta; sono disponibili anche interventi urgenti.
+- **Come funziona la fatturazione?** Gestione di pazienti autopaganti e assicurati con Cassa Malati, con fatturazione diretta al paziente o allo studio.
+
+## Risorse
+
+- Sito: https://brevamedical.ch/
+- Informativa privacy: https://brevamedical.ch/privacy.html
+- Contatto: info@brevamedical.ch · +41 76 293 25 73
 - LinkedIn: https://www.linkedin.com/company/breva-medical
 
 ## Crediti
