@@ -358,4 +358,25 @@ footer { background: linear-gradient(160deg, var(--prussiano) 0%, var(--prussian
   .icon-badge { margin-bottom: var(--s2); }
   .hero h1 { font-size: 2.1rem; }
   .contattaci-text { padding-top: 0; }
+
+  /* --- Caroselli schede su mobile (scroll-snap, no JS) --- */
+  .grid-4, .grid-2x2, .grid-3 {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: var(--s2);
+    margin: 0 -28px;
+    padding: 6px 28px var(--s2);
+    scroll-padding: 0 28px;
+    scrollbar-width: none;
+  }
+  .grid-4::-webkit-scrollbar,
+  .grid-2x2::-webkit-scrollbar,
+  .grid-3::-webkit-scrollbar { display: none; }
+  .grid-4 > *, .grid-2x2 > *, .grid-3 > * {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+  }
 }
