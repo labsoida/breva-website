@@ -1,6 +1,6 @@
 # BREVA Medical
 
-> BREVA Medical SAGL è una società svizzera con sede a Lugano (Canton Ticino) che fornisce team clinici completi — medici anestesisti, infermieri strumentisti e infermieri di sala operatoria — a strutture sanitarie private in Svizzera: studi dentistici, cliniche di fertilità, day surgery e strutture ospedaliere. Servizio B2B rivolto a professionisti sanitari, non ai pazienti.
+> BREVA Medical SAGL è una società svizzera con sede a Lugano (Canton Ticino) che fornisce team clinici completi di medici anestesisti, infermieri strumentisti e infermieri di sala operatoria a strutture sanitarie private in Svizzera: studi dentistici, cliniche di fertilità, day surgery e strutture ospedaliere. Servizio B2B rivolto a professionisti sanitari, non ai pazienti.
 
 ## Servizi
 
@@ -41,4 +41,4 @@
 
 ## Crediti
 
-Sito e comunicazione digitale di BREVA Medical: OIDA Labs, agenzia di marketing sanitario fondata da medici — https://oida-labs.com
+Sito e comunicazione digitale di BREVA Medical: OIDA Labs, agenzia di marketing sanitario fondata da medici · https://oida-labs.com
