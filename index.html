@@ -341,24 +341,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <label for="struttura">Nome della struttura <span class="req">*</span></label>
               <input id="struttura" type="text" name="struttura" autocomplete="organization" required />
             </div>
-            <div class="field">
-              <label for="tipologia">Tipologia di struttura <span class="req">*</span></label>
-              <select id="tipologia" name="tipologia" required>
-                <option value="" disabled selected>Seleziona…</option>
-                <option>Studio Odontoiatrico</option>
-                <option>Clinica di Fertilità</option>
-                <option>Day Surgery / Chirurgia Ambulatoriale</option>
-                <option>Struttura Ospedaliera</option>
-                <option>Altro</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="localita">Cantone / Località</label>
-              <input id="localita" type="text" name="localita" autocomplete="address-level1" />
+            <div class="form-row">
+              <div class="field">
+                <label for="tipologia">Tipologia di struttura <span class="req">*</span></label>
+                <select id="tipologia" name="tipologia" required>
+                  <option value="" disabled selected>Seleziona…</option>
+                  <option>Studio Odontoiatrico</option>
+                  <option>Clinica di Fertilità</option>
+                  <option>Day Surgery / Chirurgia Ambulatoriale</option>
+                  <option>Struttura Ospedaliera</option>
+                  <option>Altro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="localita">Cantone / Località</label>
+                <input id="localita" type="text" name="localita" autocomplete="address-level1" />
+              </div>
             </div>
             <div class="field">
               <label for="messaggio">Messaggio</label>
-              <textarea id="messaggio" name="messaggio" rows="4"></textarea>
+              <textarea id="messaggio" name="messaggio" rows="3"></textarea>
             </div>
             <p class="privacy-note">Con l'invio dichiaro di aver preso visione dell'<a href="privacy.html" target="_blank" rel="noopener">Informativa Privacy</a>.</p>
             <button type="submit" class="btn-submit">Richiedi una Proposta</button>

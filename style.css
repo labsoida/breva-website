@@ -273,25 +273,25 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
 .feature p { color: rgba(255, 255, 255, 0.78); font-size: 0.93rem; font-weight: 300; line-height: 1.6; }
 
 /* ---- CONTATTACI ---- */
-.contattaci { padding: var(--s7) 0; background: var(--bianco-lago); }
-.contattaci-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--s6); align-items: start; }
-.contattaci-text { padding-top: var(--s2); }
-.contattaci-text h2 { font-size: 2rem; font-weight: 300; color: var(--prussiano); margin-bottom: var(--s3); letter-spacing: 0.01em; line-height: 1.2; }
-.contattaci-text p { color: var(--text-muted); font-size: 1rem; font-weight: 300; line-height: 1.7; }
+.contattaci { padding: var(--s6) 0; background: var(--bianco-lago); }
+.contattaci-inner { display: grid; grid-template-columns: 1fr 1.45fr; gap: var(--s5); align-items: start; }
+.contattaci-text { padding-top: var(--s1); }
+.contattaci-text h2 { font-size: 1.9rem; font-weight: 300; color: var(--prussiano); margin-bottom: var(--s2); letter-spacing: 0.01em; line-height: 1.2; }
+.contattaci-text p { color: var(--text-muted); font-size: 0.98rem; font-weight: 300; line-height: 1.65; }
 
 .contattaci-form {
   background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
   border-top: 3px solid var(--rosso-ticino);   /* filetto rosso accento (brandbook) */
-  padding: var(--s5); box-shadow: var(--shadow);
+  padding: var(--s4); box-shadow: var(--shadow);
 }
-.contattaci-form form { display: flex; flex-direction: column; gap: var(--s3); }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); }
-.field { display: flex; flex-direction: column; gap: 6px; }
-.field label { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; color: var(--text); }
+.contattaci-form form { display: flex; flex-direction: column; gap: 14px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field label { font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em; color: var(--text); }
 .field .req { color: var(--rosso-ticino); }
 .contattaci-form input, .contattaci-form select, .contattaci-form textarea {
-  width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: var(--radius-sm);
-  font-family: inherit; font-size: 0.93rem; font-weight: 300; color: var(--text);
+  width: 100%; padding: 10px 13px; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  font-family: inherit; font-size: 0.92rem; font-weight: 300; color: var(--text);
   background: var(--white); transition: border-color var(--transition), box-shadow var(--transition);
 }
 .contattaci-form input:focus, .contattaci-form select:focus, .contattaci-form textarea:focus {
@@ -345,11 +345,17 @@ footer { background: linear-gradient(160deg, var(--prussiano) 0%, var(--prussian
   nav.open { display: flex; }
   nav a { width: 100%; text-align: center; padding: 6px 0; }
   .btn-nav { width: 100%; }
-  .servizi, .vantaggi, .perche, .contattaci, .intro { padding: var(--s6) 0; }
-  .hero { padding: var(--s6) 0 calc(var(--s6) + 50px); }
-  .grid-2x2 { grid-template-columns: 1fr; }
-  .contattaci-inner { grid-template-columns: 1fr; gap: var(--s5); }
-  .form-row { grid-template-columns: 1fr; }
-  .section-title, .perche h2 { font-size: 1.6rem; }
-  .contattaci-text h2 { max-width: none; }
+  .servizi, .vantaggi, .perche, .contattaci, .intro { padding: var(--s5) 0; }
+  .hero { padding: var(--s5) 0 calc(var(--s5) + 40px); }
+  .section-head { margin-bottom: var(--s4); }
+  .grid-2x2 { grid-template-columns: 1fr; gap: var(--s2); }
+  .grid-4 { gap: var(--s2); }
+  .grid-3 { gap: var(--s2); }
+  .contattaci-inner { grid-template-columns: 1fr; gap: var(--s4); }
+  .form-row { grid-template-columns: 1fr; gap: 14px; }
+  .section-title, .perche-title { font-size: 1.55rem; }
+  .vantaggio-card, .feature { padding: var(--s4) var(--s4); }
+  .icon-badge { margin-bottom: var(--s2); }
+  .hero h1 { font-size: 2.1rem; }
+  .contattaci-text { padding-top: 0; }
 }
