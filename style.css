@@ -184,8 +184,8 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
   cursor: pointer; border: 1px solid transparent;
   transition: background var(--transition), transform var(--transition), border-color var(--transition);
 }
-.btn-primary { background: var(--azzurro-lago); color: var(--white); }
-.btn-primary:hover { background: var(--azzurro-dark); transform: translateY(-1px); text-decoration: none; }
+.btn-primary { background: var(--white); color: var(--prussiano); }
+.btn-primary:hover { background: var(--acciaio); transform: translateY(-1px); text-decoration: none; }
 .btn-outline { background: transparent; color: var(--white); border-color: rgba(255, 255, 255, 0.5); }
 .btn-outline:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.10); text-decoration: none; }
 .btn-dark { background: var(--prussiano); color: var(--white); }
@@ -223,11 +223,11 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
 .card h3 { font-size: 1.15rem; font-weight: 500; color: var(--prussiano); margin-bottom: 10px; }
 .card p { color: var(--text-muted); font-size: 0.93rem; font-weight: 300; margin-bottom: var(--s3); line-height: 1.6; }
 .card-link {
-  margin-top: auto; font-weight: 500; font-size: 0.88rem; color: var(--azzurro-dark);
+  margin-top: auto; font-weight: 500; font-size: 0.88rem; color: var(--prussiano);
   letter-spacing: 0.02em; display: inline-flex; align-items: center; gap: 6px;
 }
 .card-link svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--transition); }
-.card-link:hover { text-decoration: none; }
+.card-link:hover { text-decoration: none; color: var(--azzurro-dark); }
 .card-link:hover svg { transform: translateX(3px); }
 
 /* ---- VANTAGGI ---- */
