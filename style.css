@@ -159,7 +159,7 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
   text-align: center; overflow: hidden;
 }
 .hero::after {
-  content: ''; position: absolute; right: -110px; top: -110px; width: 440px; height: 440px;
+  content: ''; position: absolute; right: -150px; top: -180px; width: 860px; height: 860px;
   background: url('pittogramma-watermark.webp') no-repeat center / contain;
   opacity: 0.10; pointer-events: none; z-index: 0;
   filter: brightness(0) invert(83%) sepia(10%) saturate(500%) hue-rotate(163deg) brightness(93%);
@@ -258,7 +258,7 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
 /* ---- WATERMARK pittogramma tono-su-tono (solo contatti) ---- */
 .contattaci { position: relative; overflow: hidden; }
 .contattaci::after {
-  content: ''; position: absolute; left: -110px; bottom: -150px; width: 600px; height: 600px;
+  content: ''; position: absolute; left: -180px; bottom: -280px; width: 940px; height: 940px;
   background: url('pittogramma-watermark.webp') no-repeat center / contain;
   opacity: 0.06; pointer-events: none; z-index: 0;
 }
@@ -374,6 +374,8 @@ footer { background: linear-gradient(160deg, var(--prussiano) 0%, var(--prussian
   .icon-badge { margin-bottom: var(--s2); }
   .hero h1 { font-size: 2.1rem; }
   .contattaci-text { padding-top: 0; }
+  .hero::after { width: 380px; height: 380px; right: -110px; top: -90px; }
+  .contattaci::after { width: 480px; height: 480px; left: -150px; bottom: -160px; }
 
   /* --- Caroselli schede su mobile (scroll-snap, no JS) --- */
   .grid-4, .grid-2x2, .grid-3 {
