@@ -302,6 +302,12 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
 .btn-submit { width: 100%; background: var(--prussiano); color: var(--white); }
 .btn-submit:hover { background: var(--azzurro-lago); }
 
+/* ---- COLOPHON ---- */
+.colophon { background: var(--bianco-lago); border-top: 1px solid var(--border); padding: var(--s4) 0; text-align: center; }
+.colophon p { font-size: 0.85rem; color: var(--text-muted); font-weight: 300; }
+.colophon a { color: var(--prussiano); text-decoration: underline; text-underline-offset: 2px; }
+.colophon a:hover { color: var(--azzurro-dark); }
+
 /* ---- FOOTER ---- */
 footer { background: linear-gradient(160deg, var(--prussiano) 0%, var(--prussiano-dark) 100%); padding: var(--s5) 0 var(--s4); }
 .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; color: rgba(255, 255, 255, 0.72); font-size: 0.85rem; font-weight: 300; }
