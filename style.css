@@ -128,17 +128,17 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
 
 /* ---- EYEBROW (Rosso Ticino, brand signature) ---- */
 .eyebrow {
-  display: inline-flex; align-items: center; gap: 10px;
-  font-size: 0.74rem; font-weight: 500; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--rosso-ticino); margin-bottom: var(--s2);
+  display: block;
+  font-size: 0.78rem; font-weight: 500; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--rosso-ticino); margin: 0 0 var(--s2);
 }
-.eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--rosso-ticino); display: inline-block; }
-.eyebrow.center { justify-content: center; }
-.eyebrow.on-dark { color: var(--white); }
-.eyebrow.on-dark::before { background: var(--rosso-ticino); }
+.eyebrow.on-dark { color: var(--rosso-ticino); }
 
-/* ---- FILETTO ---- */
-.rule-acciaio { height: 1px; background: var(--border); border: 0; max-width: var(--maxw); margin: 0 auto; }
+/* ---- SECTION HEAD (eyebrow + titolo allineati insieme) ---- */
+.section-head { text-align: center; max-width: 760px; margin: 0 auto var(--s6); }
+.section-head .eyebrow { margin-bottom: 14px; }
+.section-head .section-title,
+.section-head .perche-title { margin: 0; max-width: none; }
 
 /* ---- ICONE ---- */
 .icon-badge {
@@ -161,12 +161,11 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
 .hero-waves { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 320px; pointer-events: none; z-index: 0; }
 .hero-waves svg { width: 100%; height: 100%; display: block; }
 .hero .container { position: relative; z-index: 1; }
-.hero .eyebrow { color: var(--white); justify-content: center; }
-.hero .eyebrow::before, .hero .eyebrow::after { background: var(--rosso-ticino); }
+.hero .eyebrow { color: var(--rosso-ticino); }
 .hero h1 {
-  font-size: clamp(2.3rem, 5.2vw, 3.5rem);
-  font-weight: 300; line-height: 1.16; letter-spacing: 0.02em;
-  margin: 0 auto var(--s3); max-width: 24ch;
+  font-size: clamp(2.4rem, 5.4vw, 3.6rem);
+  font-weight: 300; line-height: 1.14; letter-spacing: 0.01em;
+  margin: 0 auto var(--s3); max-width: 22ch;
 }
 .hero-sub {
   font-size: 1.12rem; font-weight: 300; color: rgba(255, 255, 255, 0.85);
@@ -194,18 +193,18 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
 
 /* ---- TITOLI SEZIONE ---- */
 .section-title {
-  text-align: center; font-size: 2rem; font-weight: 400; color: var(--prussiano);
-  letter-spacing: 0.03em; margin: 0 auto var(--s5); line-height: 1.25; max-width: 22ch;
+  font-size: 2.15rem; font-weight: 400; color: var(--prussiano);
+  letter-spacing: 0.01em; line-height: 1.2;
 }
 
 /* ---- INTRO ---- */
 .intro { background: var(--white); padding: var(--s7) 0; text-align: center; }
-.intro-inner { max-width: 760px; margin: 0 auto; }
+.intro-inner { max-width: 740px; margin: 0 auto; }
 .intro h2 {
-  font-size: 1.7rem; font-weight: 400; color: var(--prussiano);
-  margin: 0 auto var(--s3); line-height: 1.3; letter-spacing: 0.02em; max-width: 24ch;
+  font-size: 1.75rem; font-weight: 400; color: var(--prussiano);
+  margin: 0 auto var(--s3); line-height: 1.3; letter-spacing: 0.01em;
 }
-.intro p { color: var(--text-muted); font-size: 1.05rem; font-weight: 300; }
+.intro p { color: var(--text-muted); font-size: 1.05rem; font-weight: 300; line-height: 1.7; }
 
 /* ---- SERVIZI ---- */
 .servizi { padding: var(--s7) 0; background: var(--bianco-lago); }
@@ -255,20 +254,30 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
   background: url('logo-pittogramma.webp') no-repeat center / contain; opacity: 0.06; pointer-events: none;
 }
 .perche .container { position: relative; z-index: 1; }
-.perche h2 { text-align: center; font-size: 2rem; font-weight: 300; letter-spacing: 0.03em; margin: 0 auto var(--s6); max-width: 22ch; }
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--s5); }
+.perche-title { font-size: 2.15rem; font-weight: 300; letter-spacing: 0.01em; line-height: 1.2; color: var(--white); }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--s3); }
+.feature {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 3px solid var(--acciaio);
+  border-radius: var(--radius);
+  padding: var(--s5) var(--s4);
+  transition: transform var(--transition), background var(--transition), border-top-color var(--transition);
+}
+.feature:hover { transform: translateY(-4px); background: rgba(255, 255, 255, 0.07); border-top-color: var(--azzurro-lago); }
 .feature .feature-kicker {
   font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
   color: var(--acciaio); margin-bottom: 6px;
 }
-.feature h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 10px; color: var(--white); }
-.feature p { color: rgba(255, 255, 255, 0.80); font-size: 0.93rem; font-weight: 300; line-height: 1.6; }
+.feature h3 { font-size: 1.15rem; font-weight: 500; margin-bottom: 10px; color: var(--white); }
+.feature p { color: rgba(255, 255, 255, 0.78); font-size: 0.93rem; font-weight: 300; line-height: 1.6; }
 
 /* ---- CONTATTACI ---- */
 .contattaci { padding: var(--s7) 0; background: var(--bianco-lago); }
-.contattaci-inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: var(--s6); align-items: start; }
-.contattaci-text h2 { font-size: 1.8rem; font-weight: 300; color: var(--prussiano); margin-bottom: var(--s2); letter-spacing: 0.02em; max-width: 14ch; }
-.contattaci-text p { color: var(--text-muted); font-size: 0.98rem; font-weight: 300; }
+.contattaci-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--s6); align-items: start; }
+.contattaci-text { padding-top: var(--s2); }
+.contattaci-text h2 { font-size: 2rem; font-weight: 300; color: var(--prussiano); margin-bottom: var(--s3); letter-spacing: 0.01em; line-height: 1.2; }
+.contattaci-text p { color: var(--text-muted); font-size: 1rem; font-weight: 300; line-height: 1.7; }
 
 .contattaci-form {
   background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
