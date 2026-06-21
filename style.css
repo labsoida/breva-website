@@ -250,9 +250,21 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
   color: var(--white); padding: var(--s7) 0; overflow: hidden;
 }
 .perche::after {
-  content: ''; position: absolute; left: -90px; bottom: -80px; width: 380px; height: 380px;
-  background: url('logo-pittogramma.webp') no-repeat center / contain; opacity: 0.06; pointer-events: none;
+  content: ''; position: absolute; left: -120px; bottom: -120px; width: 520px; height: 520px;
+  background: url('pittogramma-watermark.webp') no-repeat center / contain; opacity: 0.10; pointer-events: none;
+  filter: brightness(0) invert(83%) sepia(10%) saturate(500%) hue-rotate(163deg) brightness(93%);
 }
+
+/* ---- WATERMARK pittogramma tono-su-tono (sezioni chiare) ---- */
+.intro, .contattaci { position: relative; overflow: hidden; }
+.intro::after, .contattaci::after {
+  content: ''; position: absolute; width: 520px; height: 520px;
+  background: url('pittogramma-watermark.webp') no-repeat center / contain;
+  opacity: 0.05; pointer-events: none; z-index: 0;
+}
+.intro::after { right: -170px; top: -130px; }
+.contattaci::after { left: -190px; bottom: -160px; }
+.intro-inner, .contattaci-inner { position: relative; z-index: 1; }
 .perche .container { position: relative; z-index: 1; }
 .perche-title { font-size: 2.15rem; font-weight: 300; letter-spacing: 0.01em; line-height: 1.2; color: var(--white); }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--s3); }
