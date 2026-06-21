@@ -159,7 +159,7 @@ nav a:hover { color: var(--azzurro-dark); text-decoration: none; }
   text-align: center; overflow: hidden;
 }
 .hero::after {
-  content: ''; position: absolute; right: -130px; top: -200px; width: 710px; height: 710px;
+  content: ''; position: absolute; right: -130px; top: -175px; width: 710px; height: 710px;
   background: url('pittogramma-watermark.webp') no-repeat center / contain;
   opacity: 0.10; pointer-events: none; z-index: 0;
   filter: brightness(0) invert(83%) sepia(10%) saturate(500%) hue-rotate(163deg) brightness(93%);
