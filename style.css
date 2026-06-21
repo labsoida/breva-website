@@ -375,8 +375,8 @@ footer { background: linear-gradient(160deg, var(--prussiano) 0%, var(--prussian
   .hero h1 { font-size: 2.1rem; }
   .contattaci-text { padding-top: 0; }
   .hero::after {
-    width: 340px; height: 340px;
-    left: 50%; right: auto; top: -40px;
+    width: 400px; height: 400px;
+    left: 50%; right: auto; top: 0px;
     transform: translateX(-50%);
     opacity: 0.09;
   }
